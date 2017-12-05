@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/selectPics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Picktures" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delay(ms):" />
+
+        <EditText
+            android:id="@+id/delayEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="w x h:" />
+
+        <EditText
+            android:id="@+id/wxh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="256x256"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="repeat(>=0):" />
+
+        <EditText
+            android:id="@+id/repeatEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quality(0~20):" />
+
+        <EditText
+            android:id="@+id/qualityEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="comment:" />
+
+        <EditText
+            android:id="@+id/commentEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hello world"/>
+
+        <Button
+            android:id="@+id/createGIF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create GIF" />
+
+        <TextView
+            android:id="@+id/logMsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
