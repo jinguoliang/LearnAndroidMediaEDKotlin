@@ -38,6 +38,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentFor<RecordPlayActivity>())
         }
 
+        items.addItem("解码 Mp3/Wave") {
+            startActivity(intentFor<DecodeAudioActivity>())
+        }
+
         return items
     }
 
